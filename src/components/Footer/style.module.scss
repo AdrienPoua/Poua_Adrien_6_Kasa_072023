@@ -1,0 +1,21 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/variables";
+
+
+.container {
+  color: white;
+  padding : 3em;
+  .wrapper {
+    @include flex-column;
+    gap: 1rem;
+    text-align: center;
+    @include query(mobile){
+      font-size: 12px;
+      flex-shrink: 0;
+    };
+  }
+  .logo__wrapper {
+    @include flex-center-horiz;
+    @include fonts(primary, 36px, 600, white);
+  }
+}

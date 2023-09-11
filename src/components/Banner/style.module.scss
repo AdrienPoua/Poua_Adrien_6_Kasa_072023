@@ -1,0 +1,23 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/variables";
+
+
+.container {
+  @include layout;
+  position: relative;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  @include query(mobile){
+    height : 111px;
+  }
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+}
+

@@ -1,0 +1,27 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/variables";
+
+.main {
+  @include layout;
+  background: #f6f6f6;
+  border-radius: 25px;
+}
+.wrapper {
+  position: relative;
+}
+.h1 {
+@include layout;
+  @include fonts(primary, 48px, 500, white);
+  max-width: 85%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include query(mobile) {
+    font-size: 24px;
+    text-align: left;
+    padding-left : 1em;
+   
+  }
+}

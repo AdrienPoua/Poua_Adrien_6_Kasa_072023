@@ -1,0 +1,25 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/variables";
+
+$spacing: 0.15em;
+
+.container {
+  @include flex-center-horiz;
+  line-height: 1;
+  letter-spacing: $spacing;
+  @include query(mobile) {
+    font-size: 43px;
+  }
+  .house__wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-right: $spacing;
+  }
+  .house {
+    height: 80%;
+    width: 100%;
+    @include query(mobile) {
+      height: 36px;
+    }
+  }
+}

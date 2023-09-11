@@ -1,0 +1,33 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/variables";
+
+.container{
+  @include flex-center-vert;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+  @include fonts(primary, null,null, primary);
+  .logo__wrapper {
+    @include fonts($size : 68px, $weight : 600, $color : primary);
+    flex-shrink: 0;
+  }
+  .nav__links {
+    @include fonts(null, 24px, null, null);
+    display: flex;
+    justify-content: space-between;
+    gap : 2em;
+    @include query(mobile) {
+      gap : 1em;
+    }
+    .nav__link {
+      @include flex-center;
+      @include fonts( primary, 24px, null, primary);
+      @include query(mobile) {
+        font-size: 12px;
+      }
+    }
+  }
+  .active {
+    text-decoration: underline;
+  }
+}

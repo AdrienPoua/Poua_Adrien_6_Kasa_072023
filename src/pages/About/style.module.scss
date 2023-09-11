@@ -1,0 +1,15 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/variables";
+
+.main {
+  @include flex-center-column;
+  margin: auto;
+  width: 70%;
+  max-width: 1000px;
+  margin-bottom: 50px;
+  gap: 30px;
+  border-radius: 25px;
+  @include query(mobile) {
+    @include layout;
+  }
+}

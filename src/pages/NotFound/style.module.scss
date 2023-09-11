@@ -1,0 +1,22 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/variables";
+
+.main {
+  @include flex-column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10%;
+  gap: 60px;
+  &__title {
+    @include fonts(primary, 288px, 700, primary)
+  }
+  &__subtitle {
+    @include fonts(primary, 36px, 500, primary);
+    text-align: center;
+  }
+  &__link {
+    @include fonts(primary, 18px, normal, primary);
+    text-decoration: underline;
+    margin-top: 60px;
+  }
+}

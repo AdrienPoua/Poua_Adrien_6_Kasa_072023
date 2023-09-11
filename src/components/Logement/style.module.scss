@@ -1,0 +1,127 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/variables";
+
+.container {
+  display: grid;
+  gap: 2em;
+  grid-template-areas:
+    "title  host"
+    "tags stars "
+    "dropdown dropdown";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  .title__wrapper {
+    grid-area: title;
+    .title {
+      margin-bottom: 10px;
+      @include fonts(primary, 36px, 500, primary);
+    }
+    .location {
+      align-self: self-end;
+      @include fonts(primary, 18px, 500, primary);
+    }
+  }
+  .host__wrapper {
+    grid-area: host;
+    display: grid;
+    grid-template-areas: " name avatar" "lastname avatar";
+    justify-self: flex-end;
+    @include fonts(primary, 18px, 500, primary);
+    span:first-child {
+      grid-area: name;
+      align-self: self-end;
+      margin-right: 10px;
+    }
+    span:nth-child(2) {
+      grid-area: lastname;
+      justify-self: self-end;
+      margin-right: 10px;
+    }
+    .host__avatar {
+      grid-area: avatar;
+      align-self: center;
+      height: 64px;
+      max-width: 64px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+  .tags__wrapper {
+    @include flex-center-vert;
+    grid-area: tags;
+    gap: 3%;
+    .tag {
+      @include flex-center;
+      @include fonts(primary, 14px, 500, white);
+      text-align: center;
+      min-height: 30px;
+      aspect-ratio: 1.618%;
+      background-color: map-get($colors, primary);
+      border-radius: 0.5em;
+      flex: 1;
+      @include query(mobile) {
+        height: 100%;
+        min-height: 18px;
+      }
+    }
+  }
+  .star__wrapper {
+    display: flex;
+    justify-self: self-end;
+  }
+  .dropdown__wrapper {
+    grid-area: dropdown;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .star {
+    font-size: 46px;
+  }
+  .filledStar {
+    color: red;
+  }
+  .emptyStar {
+    color: map-get($colors, secondary);
+  }
+}
+@include query(mobile) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "tags tags "
+      "star host"
+      "dropdown dropdown";
+    .title__wrapper {
+      .title {
+        font-size: 18px;
+      }
+      .location {
+        font-size: 14px;
+      }
+    }
+    .tags__wrapper {
+      .tag {
+        font-size: 10px;
+      }
+    }
+
+    .dropdown__wrapper {
+      flex-direction: column;
+    }
+    .star__wrapper {
+      justify-self: flex-start;
+      align-self: center;
+      .star {
+        font-size: 18px;
+      }
+    }
+    .host__wrapper {
+      font-size: 12px;
+      .host__avatar {
+        height: 32px;
+      }
+    }
+  }
+}

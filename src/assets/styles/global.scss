@@ -1,0 +1,21 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+body {
+  min-height: 100vh;
+}
+header {
+  @include layout;
+  @include query(mobile) {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  @include flex-center;
+  margin: auto;
+  background-color: black;
+  padding: 30px 0px;
+  max-width: 1600px;
+  width: 100%;
+}

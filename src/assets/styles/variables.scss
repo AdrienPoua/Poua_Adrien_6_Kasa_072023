@@ -1,0 +1,26 @@
+// Couleurs
+$colors: (
+  primary: #ff6060,
+  secondary: #f6f6f6,
+  success: #28a745,
+  error: #dc3545,
+  warning: #ffc107,
+  black: black,
+  white: white,
+);
+
+// Typographies
+$typography: (
+  primary: "Montserrat",
+);
+
+// Points de rupture (breakpoints)
+$breakpoints: (
+  mobile: 576px,
+  tablet: 768px,
+  desktop: 992px,
+  large-desktop: 1200px,
+);
+
+// Autres variables globales
+

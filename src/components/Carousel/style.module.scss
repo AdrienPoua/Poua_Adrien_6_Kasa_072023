@@ -1,0 +1,50 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/variables";
+
+.container {
+  @include layout;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  height: 415px;
+  border-radius: 25px;
+  @include query(mobile) {
+    max-height: 255px;
+  }
+  .arrow__wrapper {
+    @include flex-center-column;
+    position: relative;
+    width: 10%;
+    & .arrow {
+      width: 50%;
+      aspect-ratio: 1;
+      transform: rotate(45deg);
+      &.right {
+        border-right: solid 12px white;
+        border-top: solid 12px white;
+      }
+      &.left {
+        border-left: solid 12px white;
+        border-bottom: solid 12px white;
+      }
+    }
+  }
+  .img {
+    position: absolute;
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  .count {
+    @include fonts(primary, 18px, null, white);
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    @include query(mobile) {
+      display: none;
+    }
+  }
+}
