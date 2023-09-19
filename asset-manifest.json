@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Poua_Adrien_6_Kasa_072023/static/css/main.0bceb238.css",
-    "main.js": "/Poua_Adrien_6_Kasa_072023/static/js/main.e25d4873.js",
+    "main.js": "/Poua_Adrien_6_Kasa_072023/static/js/main.2cdd3742.js",
     "static/media/mountain.png": "/Poua_Adrien_6_Kasa_072023/static/media/mountain.640955dab8c7bff25514.png",
     "static/media/beach.png": "/Poua_Adrien_6_Kasa_072023/static/media/beach.19221376a0aa2549c135.png",
     "index.html": "/Poua_Adrien_6_Kasa_072023/index.html",
     "main.0bceb238.css.map": "/Poua_Adrien_6_Kasa_072023/static/css/main.0bceb238.css.map",
-    "main.e25d4873.js.map": "/Poua_Adrien_6_Kasa_072023/static/js/main.e25d4873.js.map"
+    "main.2cdd3742.js.map": "/Poua_Adrien_6_Kasa_072023/static/js/main.2cdd3742.js.map"
   },
   "entrypoints": [
     "static/css/main.0bceb238.css",
-    "static/js/main.e25d4873.js"
+    "static/js/main.2cdd3742.js"
   ]
 }
