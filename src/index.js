@@ -7,18 +7,20 @@ import NotFound from "./pages/NotFound";
 import Logement from "./pages/Logement";
 import "./assets/styles/resets.scss"
 import "./assets/styles/global.scss"
+import { url } from "./variables/index"
+
 
 const router = createBrowserRouter([
   {
-    path: "/Poua_Adrien_6_Kasa_072023/", // Chemin pour la page d'accueil
+    path: `${url}/`, // Chemin pour la page d'accueil
     element: <Home />,
   },
   {
-    path: "/Poua_Adrien_6_Kasa_072023/about", // Chemin pour la page "À propos"
+    path: `${url}/about`, // Chemin pour la page "À propos"
     element: <About />,
   },
   {
-    path: "/Poua_Adrien_6_Kasa_072023/location/:id", // Chemin pour la page de détail de l'emplacement
+    path: `${url}/location/:id`, // Chemin pour la page de détail de l'emplacement
     element: <Logement />,
   },
   {
@@ -26,6 +28,7 @@ const router = createBrowserRouter([
     element: <NotFound />,
   },
 ]);
+
 
 createRoot(document.getElementById("root")).render(
   <>
