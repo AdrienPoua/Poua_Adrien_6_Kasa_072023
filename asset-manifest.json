@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/httpMage/Poua_Adrien_6_Kasa_072023.git/static/css/main.0bceb238.css",
+    "main.js": "/httpMage/Poua_Adrien_6_Kasa_072023.git/static/js/main.c3f18f09.js",
+    "static/media/mountain.png": "/httpMage/Poua_Adrien_6_Kasa_072023.git/static/media/mountain.640955dab8c7bff25514.png",
+    "static/media/beach.png": "/httpMage/Poua_Adrien_6_Kasa_072023.git/static/media/beach.19221376a0aa2549c135.png",
+    "index.html": "/httpMage/Poua_Adrien_6_Kasa_072023.git/index.html",
+    "main.0bceb238.css.map": "/httpMage/Poua_Adrien_6_Kasa_072023.git/static/css/main.0bceb238.css.map",
+    "main.c3f18f09.js.map": "/httpMage/Poua_Adrien_6_Kasa_072023.git/static/js/main.c3f18f09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bceb238.css",
+    "static/js/main.c3f18f09.js"
+  ]
+}
