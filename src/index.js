@@ -8,24 +8,33 @@ import Logement from "./pages/Logement";
 import "./assets/styles/resets.scss"
 import "./assets/styles/global.scss"
 
+
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "about",
-    element: <About />,
-  },
-  {
-    path: "location/:id",
-    element: <Logement />,
-  },
-  {
-    path: "*",
-    element: <NotFound />,
+    path: "/Poua_Adrien_6_Kasa_072023", // Ajoutez le chemin de base ici
+    children: [
+      {
+        path: "/", // Chemin pour la page d'accueil
+        element: <Home />,
+      },
+      {
+        path: "about", // Chemin pour la page "À propos"
+        element: <About />,
+      },
+      {
+        path: "location/:id", // Chemin pour la page de détail de l'emplacement
+        element: <Logement />,
+      },
+      {
+        path: "*", // Chemin pour toutes les autres pages (404)
+        element: <NotFound />,
+      },
+    ],
   },
 ]);
+
+// ...
+
 createRoot(document.getElementById("root")).render(
   <>
     <RouterProvider router={router} />
