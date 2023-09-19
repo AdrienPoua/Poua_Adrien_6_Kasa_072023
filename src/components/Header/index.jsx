@@ -2,6 +2,8 @@ import React from "react";
 import Logo from "../Logo";
 import { NavLink } from "react-router-dom";
 import style from "./style.module.scss";
+import { url } from "../../variables";
+
 export default function Index() {
   return (
       <div className={style.container}>
@@ -12,7 +14,7 @@ export default function Index() {
             <ul className={style.nav__links}>
           <li>
               <NavLink
-                to="/"
+                to={url}
                 className={({ isActive }) => (isActive ? `${style.active} ${style.nav__link}` : style.nav__link)}
               >
                 Accueil
@@ -20,7 +22,7 @@ export default function Index() {
             </li>
             <li className={style.nav__link}>
               <NavLink
-                to="/about"
+                to={`${url}/about`}
                 className={({ isActive }) => (isActive ? `${style.active} ${style.nav__link}` : style.nav__link)}
               >
                 About

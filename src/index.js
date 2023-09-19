@@ -10,22 +10,23 @@ import "./assets/styles/global.scss"
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Poua_Adrien_6_Kasa_072023/", // Chemin pour la page d'accueil
     element: <Home />,
   },
   {
-    path: "about",
+    path: "/Poua_Adrien_6_Kasa_072023/about", // Chemin pour la page "À propos"
     element: <About />,
   },
   {
-    path: "location/:id",
+    path: "/Poua_Adrien_6_Kasa_072023/location/:id", // Chemin pour la page de détail de l'emplacement
     element: <Logement />,
   },
   {
-    path: "*",
+    path: "*", // Chemin pour toutes les autres pages (404)
     element: <NotFound />,
   },
 ]);
+
 createRoot(document.getElementById("root")).render(
   <>
     <RouterProvider router={router} />
