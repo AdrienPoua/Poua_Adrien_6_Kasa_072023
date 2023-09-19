@@ -8,8 +8,10 @@ import Logement from "./pages/Logement";
 import "./assets/styles/resets.scss"
 import "./assets/styles/global.scss"
 
+
 const router = createBrowserRouter([
   {
+<<<<<<< HEAD
     path: "/Poua_Adrien_6_Kasa_072023/", // Chemin pour la page d'accueil
     element: <Home />,
   },
